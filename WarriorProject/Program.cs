@@ -13,8 +13,8 @@ namespace WarriorProject
         private int _x;
         private int _y;
 
-        public double X { get => _x; }
-        public double Y { get => _y; }  
+        public int X { get => _x; set { _x = value; } }
+        public int Y { get => _y; set { _y = value; } }  
         
         public Position(int x, int y)
         {
@@ -43,7 +43,11 @@ namespace WarriorProject
         }
         public void MoveHorizontal(int distance)
         {
-            
+            _position.X += distance;
+        }
+        public void MoveVertical(int distance)
+        {
+            _position.Y += distance;
         }
     }
     
