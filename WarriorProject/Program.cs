@@ -39,7 +39,7 @@ namespace WarriorProject
         }
         public void ToConsole()
         {
-            Console.WriteLine($"{_name}, {_position}");
+            Console.WriteLine($"{_name}, {_position.X}, {_position.Y}");
         }
         public void MoveHorizontal(int distance)
         {
